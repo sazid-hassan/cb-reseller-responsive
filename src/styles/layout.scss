@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.ant-drawer .ant-drawer-body {
+    padding: 0;
+}
+
+.sidebar-menulist {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    .single-menu {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        color: rgb(220, 15, 15);
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: rgba(72, 57, 57, 0.1) 0px 10px 10px -10px;
+        cursor: pointer;
+        padding: 8px 5%;
+
+        &.active {
+            background: rgb(226, 0, 0);
+            color: #fff;
+        }
+
+        &:hover {
+            background: rgba(226, 0, 0, 0.46);
+            color: #fff;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+}
