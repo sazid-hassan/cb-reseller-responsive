@@ -2,8 +2,10 @@ import React from "react";
 import { HiOutlineClipboardList } from "react-icons/hi";
 import { useLocation, useNavigate } from "react-router-dom";
 import { AiFillDashboard } from "react-icons/ai";
+import useBreakpoint from "antd/lib/grid/hooks/useBreakpoint";
 
 const MenuList = () => {
+  const screens = useBreakpoint();
   const navigate = useNavigate();
   const location = useLocation();
   console.log(location);
@@ -22,7 +24,9 @@ const MenuList = () => {
   ];
 
   return (
-    <div className="sidebar-menulist">
+    <div
+      className={screens.lg ? "sidebar-menulist" : "sidebar-menulist mobile"}
+    >
       {menuList.map((data, index) => (
         <div
           className={

@@ -1,8 +1,13 @@
 .header {
+    height: 6vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 10px 5%;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+
+    &.mobile {
+        justify-content: space-between;
+    }
 }
 
 .ant-drawer .ant-drawer-body {
@@ -10,11 +15,15 @@
 }
 
 .sidebar-menulist {
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 100%;
+
+    &.mobile {
+        height: 100vh;
+    }
 
     .single-menu {
         display: flex;

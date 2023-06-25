@@ -1,0 +1,44 @@
+.auth {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .auth-title {
+        font-weight: 700;
+        font-size: 24px;
+        color: rgb(220, 15, 15);
+        padding-bottom: 20px;
+    }
+
+    .auth-form {
+        padding: 40px;
+        margin-bottom: 16px;
+        border-radius: 8px;
+        box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .submit-btn {
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(220, 15, 15);
+            color: #fff;
+            font-weight: 600;
+            font-size: 18px;
+            margin-top: 12px;
+        }
+    }
+
+    .link {
+        color: rgb(220, 15, 15);
+        font-weight: 600;
+    }
+}

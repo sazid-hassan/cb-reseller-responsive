@@ -29,10 +29,16 @@ ul {
     box-sizing: border-box;
 }
 
+.general-body {
+    display: flex;
+}
+
 .container {
-    width: 90%;
+    flex-grow: 1;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px;
 }
 
 @import "./layout.scss";
+@import "./sidebar.scss";
+@import "./auth.scss";
